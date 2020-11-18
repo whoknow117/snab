@@ -1,0 +1,23 @@
+
+
+
+.specifications {
+    width: 100%;
+     padding: 30px;
+     line-height: 25px;
+ 
+     font-family: Montserrat, Arial, sans-serif;
+    h2 {
+         
+        font-weight: 500;
+        font-size: 25px;
+        color: rgb(41, 41, 41);
+    }
+    &Item {
+        margin-top: 20px;
+        color: rgb(59, 59, 59);
+        width: 900px;
+        font-size: .92rem;
+         
+    }
+}

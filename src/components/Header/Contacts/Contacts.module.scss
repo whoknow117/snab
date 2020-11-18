@@ -1,0 +1,125 @@
+$fontFamily: Montserrat, sasn-serif;
+
+$lHeight: 20px;
+$mainColor: #f87307;
+
+
+
+.contacts {
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    
+    .contactsWrap {
+       
+  
+        font-family: $fontFamily;
+        font-size: 14px;
+        flex-basis: 20%;
+        line-height: $lHeight;
+         
+            
+        display: flex;
+        max-width: 400px;
+        justify-content: space-between;
+        width: 100%;
+        .city {
+            display: block;
+            font-size: 15px;
+            order: 2;
+            margin-left: 20px;
+            font-weight: 500;
+            flex-basis: 60%;
+            color: rgb(80, 80, 80);
+            text-align: right; 
+        }
+        .phone {
+            flex-basis: 40%;
+            width: 100%;
+            white-space: nowrap;
+            order: 1;
+          
+            font-weight: 600;
+            font-size: 15px;
+            color: $mainColor;
+            border-bottom: 2px dashed $mainColor;
+            
+        }   
+    }
+    .schedule {
+        
+      
+        font-family: $fontFamily;
+        display: block;
+        width: 100%;
+        position: relative;
+        font-size: 14px;
+        line-height: $lHeight;
+        
+        span {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+    svg {
+        fill: rgb(92, 92, 92);
+        margin-left: 4px;
+        font-size: 14px;
+    }
+}
+.wrap {
+    display: block;
+    flex-basis: 80%;
+    width: 100%;
+    position: relative;
+    z-index: 1001;
+    align-self: center;
+    margin-right: 40px;
+    .headerNav {      
+        display: block;
+        width: 100%;
+         
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        &Item {
+      
+        list-style: none;     
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 20px;
+        color: rgb(0, 0, 0); 
+        position: relative;
+        transition: .2s ease-in-out;
+        padding: 3px 0;
+        &:hover {
+            color: $mainColor;
+            cursor: pointer;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: .2s ease-in-out;
+        }   
+        &:hover:before {
+            
+         
+          
+            width: 100%;
+            
+            background: $mainColor;
+             
+        }
+        }
+}
+ 
+}
+ 
+ 

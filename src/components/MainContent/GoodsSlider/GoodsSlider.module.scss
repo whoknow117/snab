@@ -1,0 +1,153 @@
+ $mainTxtColor: rgb(94, 94, 94);
+ $mainColor: #ec6f1b;
+ 
+ .goodsSlider {
+ 
+    
+    margin-top: 24px;
+    margin-left: 24px;
+    font-weight: 500;
+    color: #000;
+     
+    &__title {
+        margin-top: 44px;
+        margin-bottom: 44px;
+        font-size: 30px;
+    }
+    .goodsSliderItem {
+       max-width: 200px;
+       border: 1px solid transparent;
+       padding: 12px;
+       min-width: 200px;
+       overflow: hidden;
+       position: relative;
+       z-index: 101;
+       overflow: hidden;
+       border-radius: 4px;
+       
+       text-decoration: none;
+       &:hover {
+         .name {
+            background: linear-gradient(90deg, red, green, yellow);
+            text-shadow: none;
+            background-clip: text;
+       
+            overflow: hidden;
+            --webkit-background-clip: text;
+            --webkit-text-fill-color: transparent;
+         }
+       } 
+     
+       cursor:pointer;
+       
+       cursor: pointer;
+       &:nth-child(1), &:nth-child(3) {
+          .sticker {
+             background: rgb(255, 0, 106);
+          }
+       }
+        
+       svg {
+          font-size: 17px;
+          margin-top: 10px;
+          margin-bottom: 4px;
+       }
+       .sticker {
+         padding: 4px 8px;
+         font-size: 9px;
+         background:  rgb(255, 0, 234) ;
+         background-size: 110%;
+         display: inline-block;
+         
+         color: #fff;
+        
+       
+         border-radius: 4px;
+      //    animation: anime 11s infinite;
+          
+      //  }
+      //  @keyframes anime {
+      //     0% {background-position: 0 0 ;}
+      //     50% {background-position: 110px 30px ;}
+      //     100% {background-position: 0 0 ;}
+       }
+       .image {
+          width: 190px;
+          height: 130px;
+          margin: 0 auto;
+          cursor: pointer;
+          z-index: 111;
+          position: relative;
+          margin-bottom: 24px;
+          img {
+             width: 100%;
+             height: 100%;
+             object-fit: contain;
+              
+          }
+       }
+        
+       .name {
+          
+          font-size: 14px;
+          width: 100%;
+          height: 34px;
+          overflow: hidden;
+          color: rgb(15, 139, 240);
+          cursor:pointer;
+         
+          .price {
+             color: $mainColor;
+             font-size: 11px !important;
+            
+            
+             .oldPrice {
+                display: block;
+                
+                color: silver;
+               
+             }
+          }
+           
+       }
+    }
+ }
+ .wrap { 
+    display: flex;
+    justify-content: space-around;
+    .goodsSliderItem {
+       &:hover {
+         box-shadow: 0 4px 8px rgba(0,0,0,.2 )
+       }
+    }
+    
+ }
+ strike {
+    color: silver;
+    margin-left: 4px;
+    font-size: 15px;
+ 
+ }
+ .price {
+    font-size: 18px;
+    color: $mainColor;
+ }
+
+ .btn {
+   border: none;
+   background: #fff ;
+   padding: 6px 14px;
+   border-radius: 3px;
+   margin-top: 20px;
+   border: 1px solid  rgb(71, 146, 243);
+   font-size: 15px;
+   color: rgb(103, 103, 255);
+   font-weight: 500;
+   font-size: 13px;
+   cursor: pointer;
+   font-family: Montserrat;
+   &:hover {
+      background:  rgb(71, 146, 243)   ;
+      color: #fff;
+   }
+}

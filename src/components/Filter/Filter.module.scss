@@ -1,0 +1,34 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: #ff9900;
+$height: 44px;
+
+
+
+.filter {
+    position: relative;
+    display: block;
+    height: calc(100vh - 80px);
+    flex-basis: 20%;
+    border-left: 1px solid rgba(0,0,0,.1);
+    .title {
+        text-align: center;
+         
+        h4 {
+            font-family: $fFamily;
+            font-weight: 500;
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid rgb(238, 238, 238);
+        }
+    }
+    .price {
+
+        .title {
+            padding: 10px 0 0 10px;
+            text-align-last: left;
+            font-family: $fFamily;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+
+$fFamily: Montserrat, sans-serif;
+$mainColor: rgb(98, 33, 250);
+$height: 44px;
+$linkColor: #ff8800;
+$secondBgColor: #2e2e2e;
+$marginTop: 16px;
+$dotted: rgb(146, 146, 146);
+$stroke: 80;
+
+
+
+.buyItem {
+    display: flex;     
+    width: 100%;  
+    .buy {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+       button {
+          display: inline-block;
+          border: none;
+          background:  rgb(127, 33, 250);
+          color: #fff;
+          height: 50px;
+          width: 50px;
+          border-radius: 4px;
+          font-weight: 700;
+          letter-spacing: 0.4px;
+          font-size: 14px;
+          box-shadow: 2px 2px 12px rgb(206, 206, 206);
+          transition: .2s;
+          border-radius: 50%;
+          opacity: 1;
+          visibility: visible;
+          outline: none;
+          position: relative;
+          cursor: pointer;
+          transition-delay: .2s;
+
+          .basketWrap{
+             position: absolute;
+             top: 9px;
+             left: 6px;
+             opacity: 1;
+             transition: .3s;
+             
+             & path {
+           
+                
+               fill: #fff;
+               
+             }
+             
+          }
+          &:hover {
+             background: rgb(250, 120, 33);
+             transition: .1s;
+             box-shadow: none;
+             font-size: 0;
+             width: 50px;
+             height: 50px;
+              
+             border-radius: 50%;
+             
+             .basketWrap{
+                opacity: 1;
+                visibility: visible;
+                transition: .3s;
+                & path {
+               fill: transparent;
+               stroke-width: 10;
+               stroke: #fff;
+               stroke-dasharray: $stroke;
+               stroke-dashoffset: $stroke;
+               
+               animation: animateIcons .3s linear forwards
+
+                }
+                @keyframes animateIcons {
+                   0%
+                   {
+                      stroke-dashoffset:  80;
+                      stroke-dasharray:  80;
+                   }
+                   60%
+                   {
+                      stroke-dashoffset:0;
+                      stroke-dasharray: 0;
+                      fill: transparent;
+                   }
+                   100%
+               {
+                   fill: #fff;
+               }
+                }
+                
+             }
+       }
+    }
+ }
+}

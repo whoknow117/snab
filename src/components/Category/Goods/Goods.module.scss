@@ -1,0 +1,45 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: #ff9900;
+$height: 44px;
+$secondBgColor: #ff9900;
+$marginTop: 16px;
+$dotted: rgb(146, 146, 146);
+
+
+.goods {
+    
+display: flex;
+flex-direction: column;
+width: 200px;
+cursor: pointer;
+margin: 0 auto;
+position: relative;
+&:hover:before {
+     content: '';
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;    
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 200;
+     background: rgba(255,255,255,.2);
+}
+    .image{
+        margin: 0 auto;
+        width: 160px;
+        height: 150px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .name {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+}

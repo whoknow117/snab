@@ -1,0 +1,133 @@
+ $mainTxtColor: rgb(94, 94, 94);
+ $mainColor: #ec6f1b;
+ ;
+ .mainContent {
+   z-index: 1;
+  
+   width: 100%;
+   position: relative;
+     
+   color:  $mainTxtColor;
+   position: relative;
+   font-family: Montserrat;
+   overflow: hidden;
+  
+    .slider {
+
+        
+       background: #fff;
+     
+       width: 60%;
+
+        
+       
+       position: relative;
+     
+       
+    
+      //  &:before {
+      //     content: '';
+      //     position: absolute;
+      //     right: 0;
+      //     top: 0;
+      //     width: 50%;
+      //     height: 100%;
+      //     background:linear-gradient(240deg, rgb(255, 96, 96), rgb(255, 66, 66),#c23b3b);
+      //  }
+        
+       .image{
+         
+          
+          width: 100%;
+          height: 100%;
+         
+          img {
+             width: 100%;
+             
+          }
+          
+       }
+    }
+ }
+ 
+ .info {
+    display: flex;
+    width: 100%;
+  
+    &__item {
+     width: 300px;
+      min-width: 280px;
+      margin-right: 10px;
+      margin-left: 10px;
+      height: 120px;
+      border-radius: 5px ;
+      background: $mainColor;
+      display: flex;
+     align-items: center;
+     position: relative;
+     cursor: pointer;
+      svg {
+          
+         fill: rgb(41, 41, 41);
+         font-size: 30px;
+         position: absolute;
+         left: 57px;
+         top: 40px;
+          
+      }
+ 
+      .text {
+         flex-basis: 50%;
+         color: #fff;
+         text-align: left;
+        
+          
+         font-size: 13px;  
+      }
+    }
+ }
+
+ .info__item {
+   flex-basis: 50%;
+    .itemImg {
+       width: 120px;
+      
+       margin-left: 10px;
+      
+       border-radius: 4px;
+    
+     
+       img {
+          width: 100%;
+          height: 100%;
+       }
+    }
+    .txt {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+      width: 150px;
+      margin-left: 20px;   
+       .linkSpan {
+          color: #fff;
+          text-decoration: underline;
+          font-size: 12px;
+          margin-top: 10px;
+       }
+
+    }
+ }
+ .price {
+    font-size :14px;
+ }
+
+ .sliderMain {
+   overflow: hidden;
+   position: relative;
+   width: 800px;
+   height: 220px;
+   margin-bottom: 24px;
+
+  
+ }
+ 

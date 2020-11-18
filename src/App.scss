@@ -1,0 +1,51 @@
+ $secondBgColor: rgb(250, 250, 250);
+ $sideBarWidth: 230px;
+ $headerHeight: 10px;
+ $bgColor: rgb(253, 253, 253);
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    font-family:IBM Plex Sans;
+     
+}
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+.App {
+     
+    position: relative;
+    .appWrapp {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        .mainContent {
+            width: calc(100vw - 230px);
+            height: 100vh;
+            margin-left: 230px;
+          
+            position: relative;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    position: relative;
+    z-index: 101;
+}
+
+.sidebar {
+    height: 100vh;
+    border-right: 1px solid rgb(231, 231, 231);
+    position: fixed;
+    background: $bgColor;
+    width: 230px;
+    z-index: 2001;
+    overflow: hidden;
+    list-style: none;
+    top: 0;
+}

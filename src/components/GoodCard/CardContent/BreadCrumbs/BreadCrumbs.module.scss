@@ -1,0 +1,54 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: #ff8800;
+$linkColor: #232627;
+$height: 44px;
+
+ .breadCrumbs {
+     width: 100%;
+    
+     display: block;
+     list-style: none;  
+     display: flex;
+     height: 50px;
+     line-height: 50px;
+     padding-left: 10px;
+     border-bottom: 1px solid rgb(236, 234, 234);
+     li {
+         margin-left: 10px;
+         
+              &:last-child {
+           
+             a {
+                  color: rgb(117, 117, 117);
+                  border: none;
+                  font-family: Montserrat, Arial, sans-serif;
+                  font-size: 11px;
+                  cursor: auto;
+                 
+                }
+              }
+              &:not(:last-child){
+                a{
+                    font-family: $fFamily;
+                    font-size: 11px;
+                    color: $linkColor;
+                    transition: .1s ease-in-out;
+                    padding: 4px 0;
+                    margin-right: 12px;
+          
+                    font-weight: 500;
+                    border-bottom: 1px solid rgba(87, 87, 87, 0.4);
+                    cursor: pointer;
+                    &:hover {
+                        color: $mainColor;
+                        border-bottom: 1px solid $mainColor;
+                        
+                    }
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+              }
+          
+     }
+ }

@@ -1,0 +1,18 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: rgb(123, 108, 255);
+$height: 44px;
+$secondBgColor: rgb(123, 108, 255);
+$marginTop: 16px;
+$mainColor: #ec6f1b;
+
+
+.rating {
+   
+   
+   svg {
+      fill: $mainColor;
+   }
+   input {
+      margin-left:4px;
+   }
+}

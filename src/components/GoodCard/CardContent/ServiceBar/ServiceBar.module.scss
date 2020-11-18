@@ -1,0 +1,46 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: rgb(252, 80, 0);
+$height: 44px;
+$secondBgColor: rgb(250, 250, 250);
+
+
+.serviceBar {
+     min-width: 200px;
+     display: flex;
+     flex-direction: column;
+    
+     background-repeat: 1px solid rgb(236, 236, 236);
+    &__item {
+        height: 150px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+       
+        display: flex;
+        flex-direction: column;
+        .serviceBar__image {
+           width: 100%;
+           height: 100%;
+           min-width: 240px;
+          
+      
+            img {
+                margin-top: 30px;
+                width: 60%;
+                height: 60%;
+            }
+             
+
+        }
+       h5 {
+         
+            font-family: $fFamily;
+            font-size: 13px;
+            font-weight: normal;
+         
+       }
+    }
+}

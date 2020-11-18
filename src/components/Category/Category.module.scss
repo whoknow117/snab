@@ -1,0 +1,43 @@
+$fFamily: Montserrat, sans-serif;
+$mainColor: #ff9900;
+$height: 44px;
+$secondBgColor: #ff9900;
+$marginTop: 16px;
+$dotted: rgb(146, 146, 146);
+$sideBarWidth: 240px;
+$headerHeight: 80px;
+
+.сategories {
+ 
+  position: relative;
+  display: flex;
+    
+  
+ 
+  .mainContent {
+    flex-basis: 80%;
+    position: relative;
+    display: block;
+   
+    .top {
+     
+   
+     
+    }
+    h3 {
+       display: block;
+       padding-left: 20px;
+       padding-top: 10px;
+       font-family: Montserrat, sans-serif;
+       letter-spacing: 2px;
+       font-weight: 500;
+       font-size: 30px;
+       line-height: 100px;
+    }
+  }
+}
+.goodsWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+}

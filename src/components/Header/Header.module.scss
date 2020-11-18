@@ -1,0 +1,40 @@
+
+
+
+
+.header {
+    background: #fff;
+    width: calc(100% - 230px);
+    margin-left: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    flex-direction: column;
+    &Icons {
+         margin-left: auto;
+         margin-right: 8px;
+         display: flex;
+         z-index: 210;
+    }
+}
+.headerNav {
+  width: 100%; 
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 8px 4px;
+  position: relative;
+   
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+ 
