@@ -4,11 +4,10 @@ import BreadCrumbs from './BreadCrumbs/BreadCrumbs';
 import GoodSlider from './GoodSlider/GoodSlider';
 import Discription from './Discription/Discription';
 import Title from './Title/Title';
- 
+
 import ServicesBar from './ServiceBar/ServiceBar';
 import MiniDiscript from './MiniDiscript/MiniDiscript';
 import Specifications from './Specifications/Specifications';
-
 
 
 const CardContent = (props) => {
@@ -18,35 +17,32 @@ const CardContent = (props) => {
         <div className={classes.content}>
 
 
-
             <div className={classes.wrap}>
 
                 <div className={classes.flexWrap}>
                     <div className={classes.top}>
-                        <BreadCrumbs />
- 
+                        <BreadCrumbs/>
+
                     </div>
-                    <MiniDiscript />
+                    <MiniDiscript/>
                     <div className={classes.wrapper}>
-                        <Title name={props.name} />
+                        <Title name={props.name}/>
 
                     </div>
                     <div className={classes.flex}>
-                        
+
                         <GoodSlider img={props.img} images={props.images}/>
                     </div>
                 </div>
                 <div className={classes.discr}>
-                    <Discription price={props.price} />
+                    <Discription price={props.price}/>
                 </div>
 
 
-
             </div>
-           <Specifications spec={props.specifications}/> 
+            <Specifications spec={props.specifications}/>
 
         </div>
-
 
 
     )
